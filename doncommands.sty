@@ -1,0 +1,39 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{doncommands}[01-29-2026]
+\RequirePackage{xspace}
+
+% \newtheorem{theorem}{Theorem}[chapter]
+% \newtheorem{lemma}{Lemma}
+% \newtheorem{corollary}{Corollary}
+% \newtheorem{definition}{Definition}[chapter]
+
+%% Notations for commonly used sets
+\ifdefined\mathbb
+  \newcommand{\RR}{\mathbb{R}\xspace}  % Real set
+  \newcommand{\NN}{\mathbb{N}\xspace}  % Natural number set
+  \newcommand{\QQ}{\mathbb{Q}\xspace}  % Rational number set
+  \newcommand{\CC}{\mathbb{C}\xspace}  % Complex number set
+  \newcommand{\ZZ}{\mathbb{Z}\xspace}  % Integer number set
+  \newcommand{\EE}{\mathbb{E}\xspace}  % Expectation
+  \newcommand{\PP}{\mathbb{P}\xspace}  % Probability
+  \newcommand{\BB}{\mathbb{B}\xspace}  % Logic set {true, false}
+\else
+  \newcommand{\RR}{\mathrm{R}\xspace}  % Real set
+  \newcommand{\NN}{\mathrm{N}\xspace}  % Natural number set
+  \newcommand{\QQ}{\mathrm{Q}\xspace}  % Rational number set
+  \newcommand{\CC}{\mathrm{C}\xspace}  % Complex number set
+  \newcommand{\ZZ}{\mathrm{Z}\xspace}  % Integer number set
+  \newcommand{\EE}{\mathrm{E}\xspace}  % Expectation
+  \newcommand{\PP}{\mathrm{P}\xspace}  % Probability
+\fi
+
+\newcommand{\step}[1]{\quad & \textit{(#1)}} % Line by line labeling for notes
+
+\DeclarePairedDelimiter{\norm}{\lVert}{\rVert} % Norm
+
+\newcommand{\GaussianDist}[2]{\ensuremath{\operatorname*{\mathcal{N}}\left(#1, #2\right)}}
+\newcommand{\GP}[2]{\ensuremath{\operatorname*{\mathcal{GP}}\left(#1, #2\right)}}
+\DeclareMathOperator{\cov}{Cov}
+\DeclareMathOperator{\var}{Var}
+\DeclareMathOperator{\indep}{\perp\!\!\!\perp}
+\DeclareMathOperator*{\argmin}{argmin}
