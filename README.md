@@ -2,6 +2,6 @@
 
 ## Commands
 ```
-$ echo 'export TEXINPUTS="$HOME/Projects/texplates//:"' >> ~/.bashrc
-$ echo 'export TEXINPUTS="/home/don/Projects/texplates//:"' >> ~/.profile
+$ echo 'export TEXINPUTS="$HOME/Projects/dhtex//:"' >> ~/.bashrc
+$ echo 'export TEXINPUTS="/home/don/Projects/dhtex//:"' >> ~/.profile
 ```
