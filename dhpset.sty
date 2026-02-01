@@ -1,0 +1,24 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{dhpset}[2026/01/24 Donovan Ho's Problem Set]
+
+\theoremstyle{definition}
+
+\newtheorem{problemnum}{Problem}
+
+\newenvironment{problem}[1]
+{
+  \setcounter{problemnum}{#1-1}
+  \begin{problemnum}
+    }
+    {\end{problemnum}}
+
+\makeatletter
+\newenvironment{solution}{
+  \par\addvspace{1\baselineskip}
+  \par\noindent\textbf{Solution:}\par
+  \vspace{0.3\baselineskip}
+  \ignorespaces
+}{
+  \par
+}
+\makeatother
