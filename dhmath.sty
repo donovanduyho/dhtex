@@ -1,6 +1,12 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{dhmath}[02-01-2026 Donovan Ho's Math]
+
 \RequirePackage{xspace}
+\RequirePackage{bm}
+
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
+\RequirePackage{amsfonts}
 
 %% Notations for commonly used sets
 \ifdefined\mathbb
@@ -23,8 +29,7 @@
 \fi
 
 \newcommand{\step}[1]{\quad & \textit{(#1)}} % Line by line labeling for notes
-
-\DeclarePairedDelimiter{\norm}{\lVert}{\rVert} % Norm
+\newcommand{\norm}[1]{\ensuremath{\left\lVert #1 \right\rVert}}
 
 \newcommand{\GaussianDist}[2]{\ensuremath{\operatorname*{\mathcal{N}}\left(#1, #2\right)}}
 \newcommand{\GP}[2]{\ensuremath{\operatorname*{\mathcal{GP}}\left(#1, #2\right)}}
