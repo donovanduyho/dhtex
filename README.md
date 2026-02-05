@@ -1,7 +1,12 @@
 # LaTeX Templates
 
-## Commands
+## Setup
+1. Clone Repository
 ```
-$ echo 'export TEXINPUTS="$HOME/Projects/dhtex//:"' >> ~/.bashrc
-$ echo 'export TEXINPUTS="/home/don/Projects/dhtex//:"' >> ~/.profile
+$ git clone git@github.com:donovanduyho/dhtex.git
+```
+2. Update Environment Variable
+```
+$ echo 'export TEXINPUTS="$HOME/path/to/dhtex//:"' >> ~/.bashrc
+$ echo 'export TEXINPUTS="$HOME/path/to/dhtex//:"' >> ~/.profile
 ```
